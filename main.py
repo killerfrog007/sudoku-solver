@@ -28,3 +28,13 @@ def find_empty(board):
             if board[i][j] == 0:
                 return (i, j)
 
+#pos for position
+def validate(board, num, pos):
+    
+    #cheacks row
+    for i in range(board[0]):
+        if board[pos[0]][i] == num:
+            return False
+
+    #cheacks coulum
+    #cheacks square
